@@ -1,0 +1,31 @@
+ps1 - Research Notes
+Tarun Vaka, DataMan Py, 2026-09-23
+
+MOTIVATION
+People in some countries live decades longer than in others, and income is the usual first suspect. This ps loads three small datasets to see how tight that link is inside the longest-living countries, and what one rich country (the US) looks like on the inside.
+
+RESEARCH QUESTIONS
+1. Inside the top-50 longest-living countries, how much life-expectancy variation is left?
+2. How is GDP per capita distributed worldwide?
+3. In a small US sample, how do age and poverty ratio break out by race and gender?
+4. When merged, how strongly does life expectancy correlate with GDP (raw vs log)?
+
+HYPOTHESES
+H1: Life expectancy in the top-50 is compressed (selection on longevity).
+H2: GDP per capita is right-skewed; log helps.
+H3: NHANES race x gender cells show visible mean differences even at n=50.
+H4: Life expectancy correlates more tightly with log-GDP than raw GDP.
+
+UNIT OF ANALYSIS
+Country (datasets 1, 2, merged). Person (dataset 3, NHANES).
+
+DATASETS
+1. HTML: Wikipedia, "List of countries by life expectancy"
+   https://en.wikipedia.org/wiki/List_of_countries_by_life_expectancy
+2. JSON: World Bank GDP per capita (NY.GDP.PCAP.CD), 2022
+   https://api.worldbank.org/v2/country/all/indicator/NY.GDP.PCAP.CD?format=json&date=2022&per_page=400
+3. SAS xpt: CDC NHANES 2021-2023 Demographics (DEMO_L)
+   https://wwwn.cdc.gov/Nchs/Data/Nhanes/Public/2021/DataFiles/DEMO_L.xpt
+
+LIMITATIONS
+Top-50 slice truncates variance. NHANES n=50 too small for real inference. Country-name join is exact-match only.
