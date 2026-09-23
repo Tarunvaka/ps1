@@ -1,5 +1,5 @@
 ps1 - Research Notes
-Tarun Vaka, DataMan Py, 2026-09-23
+Tarun Vaka
 
 MOTIVATION
 People in some countries live decades longer than in others, and income is the usual first suspect. This ps loads three small datasets to see how tight that link is inside the longest-living countries, and what one rich country (the US) looks like on the inside.
