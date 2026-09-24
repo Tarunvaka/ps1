@@ -24,7 +24,7 @@ DATASETS
    https://en.wikipedia.org/wiki/List_of_countries_by_life_expectancy
 2. JSON: World Bank GDP per capita (NY.GDP.PCAP.CD), 2022
    https://api.worldbank.org/v2/country/all/indicator/NY.GDP.PCAP.CD?format=json&date=2022&per_page=400
-3. SAS xpt: CDC NHANES 2021-2023 Demographics (DEMO_L)
+3. SAS xpt: CDC NHANES 2021-2023 Demographics (DEMO_L) National Health and Nutrition Examination Survey (NHANES)
    https://wwwn.cdc.gov/Nchs/Data/Nhanes/Public/2021/DataFiles/DEMO_L.xpt
 
 LIMITATIONS
